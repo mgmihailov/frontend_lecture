@@ -1,0 +1,13 @@
+.about-us {
+  text-align: center;
+}
+
+.about-us h1 {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.about-us .about-us-line {
+  font-size: 17px;
+  line-height: 5px;
+}
