@@ -22,25 +22,16 @@ var topSellers = [
 
 var topBuyers = topSellers;
 
-function appendTopUsersToTree(listName) {
-    partials = [];
+function appendTopUsersToTree(listName, list) {
     if(listName === 'sellers') {
-        topSellers.forEach(function(seller, index){
-            partials.push(buildTopUserPartial(seller));
-        });
-
         topSellersElement = document.getElementById('top-sellers');
-        partials.forEach(function(partial, index){
-            topSellersElement.appendChild(partial);
+        list.forEach(function(seller, index){
+            topSellersElement.appendChild(buildTopUserPartial(seller));
         });
     } else if (listName === 'buyers') {
-        topBuyers.forEach(function(buyer, index){
-            partials.push(buildTopUserPartial(buyer));
-        });
-
         topBuyersElement = document.getElementById('top-buyers');
-        partials.forEach(function(partial, index){
-            topBuyersElement.appendChild(partial);
+        list.forEach(function(buyer, index){
+            topBuyersElement.appendChild(buildTopUserPartial(buyer));
         });
     }
 }
@@ -78,8 +69,8 @@ function buildUserData(user) {
 }
 
 window.onload = function() {
-    appendTopUsersToTree('sellers');
-    appendTopUsersToTree('buyers');
+    appendTopUsersToTree('sellers', topSellers);
+    appendTopUsersToTree('buyers', topBuyers);
 };
 
 
