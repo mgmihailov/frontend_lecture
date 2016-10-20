@@ -1,22 +1,28 @@
 var topSellers = [
     {
-        firstName: 'Petar',
+        firstName: 'Milko',
         surName: 'Petrov',
-        lastName: 'Petrov',
+        lastName: 'Kailaidjiev',
         earnedAmount: '124лв.',
-        image_path: 'images/some_name.jpg'
+        image_path: 'images/milko.png'
     }, {
-        firstName: 'Petar',
-        surName: 'Petrov',
-        lastName: 'Petrov',
+        firstName: 'Sansa',
+        surName: 'Ned',
+        lastName: 'Stark',
         earnedAmount: '124лв.',
-        image_path: 'images/some_name.jpg'
+        image_path: 'images/sansa.jpg'
     }, {
-        firstName: 'Petar',
-        surName: 'Petrov',
-        lastName: 'Petrov',
+        firstName: 'Deneris',
+        surName: 'Regar',
+        lastName: 'Targarien',
         earnedAmount: '124лв.',
-        image_path: 'images/some_name.jpg'
+        image_path: 'images/deneris.jpg'
+    }, {
+        firstName: 'Tirion',
+        surName: 'Tywin',
+        lastName: 'Lannister',
+        earnedAmount: '124лв.',
+        image_path: 'images/tirion.jpg'
     }
 ];
 
@@ -47,24 +53,32 @@ function buildTopUserPartial(user) {
 }
 
 function buildUserImage(user) {
-  img = document.createElement('img');
-  img.setAttribute('src', user.image_path);
-  img.setAttribute('class', 'top-user-picture');
+    imgContainer = document.createElement('div');
+    imgContainer.setAttribute('class', 'image-container');
 
-  return img;
+    img = document.createElement('img');
+    img.setAttribute('src', user.image_path);
+    img.setAttribute('class', 'top-user-picture');
+
+    imgContainer.appendChild(img);
+    return imgContainer;
 }
 
 function buildUserData(user) {
   dataContainer = document.createElement('div');
+  dataContainer.setAttribute('class', 'data-container');
+
   dataList = document.createElement('ul');
   for(var attr in user) {
+    if(attr === 'image_path') { continue; }
+
     datum = user[attr];
     dataElement = document.createElement('li');
     dataElement.innerText = datum;
     dataList.appendChild(dataElement);
   }
-  dataContainer.appendChild(dataList);
 
+  dataContainer.appendChild(dataList);
   return dataContainer;
 }
 
