@@ -15,14 +15,25 @@
   margin-top: 20px;
   margin-left: 5px;
   float: left;
-
   font-size: 13px;
+}
+
+.column>div {
+  border: 2px solid lightgrey;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.column>div:hover {
+  border: 2px solid orange;
+  cursor: pointer;
 }
 
 .column .column-header {
   text-align: center;
-  margin-bottom: 10px;
-
   background-color: #f2f2f2;
   color: #003162;
   font-size: 17px;
