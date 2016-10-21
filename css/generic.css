@@ -1,4 +1,29 @@
 * {
 	padding: 0;
 	margin: 0;
+  font-family: 'Verdana';
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+footer a {
+  display: block;
+  width: 49%;
+  display: inline-block;
+
+  text-align: center;
+  text-decoration: none;
+  color: #003162;
+}
+
+footer a:hover {
+  color: orange;
+  cursor: pointer;
 }

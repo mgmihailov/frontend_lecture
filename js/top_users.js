@@ -1,10 +1,10 @@
 var topSellers = [
     {
-        firstName: 'Milko',
+        firstName: 'Petyr',
         surName: 'Petrov',
-        lastName: 'Kailaidjiev',
+        lastName: 'Baelish',
         earnedAmount: '124лв.',
-        image_path: 'images/milko.png'
+        image_path: 'images/petir.jpg'
     }, {
         firstName: 'Sansa',
         surName: 'Ned',
@@ -13,8 +13,8 @@ var topSellers = [
         image_path: 'images/sansa.jpg'
     }, {
         firstName: 'Deneris',
-        surName: 'Regar',
-        lastName: 'Targarien',
+        surName: 'Raegar',
+        lastName: 'Targaryen',
         earnedAmount: '124лв.',
         image_path: 'images/deneris.jpg'
     }, {
