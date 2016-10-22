@@ -4,29 +4,6 @@
     font-family: 'Verdana';
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    width: 100%;
-    background-color: #f2f2f2;
-}
-
-footer a {
-    display: block;
-    width: 49%;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    color: #003162;
-}
-
-footer a:hover {
-    color: orange;
-    cursor: pointer;
-}
-
 body {
     width: 70%;
     margin: auto;
@@ -83,6 +60,13 @@ header nav ul li a:hover {
 }
 
 .success {
+    background-color: #F3F3F3;
+    position: absolute;
+    width: 20%;
+    text-align: center;
+    padding: 2%;
+    top: 2%;
+    left: 40%;
     opacity: 0;
     color: #228B22;
     border: 4px solid #006900;
@@ -90,6 +74,7 @@ header nav ul li a:hover {
     animation-duration: 3s;
     animation-iteration-count: 2;
     animation-direction: alternate;
+    font-size: 1.5em;
 }
 
 .error {
@@ -108,4 +93,26 @@ header nav ul li a:hover {
     animation-iteration-count: 2;
     animation-direction: alternate;
     font-size: 1.5em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+footer a {
+    width: 35%;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #003162;
+}
+
+footer a:hover {
+    color: orange;
+    cursor: pointer;
 }
