@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Top users</title>
-
-  <meta charset='utf-8'>
-  <link rel='stylesheet' href='css/generic.css'>
-  <link rel='stylesheet' href='css/top_users.css'>
+    <meta charset='utf-8' />
+    <title>Top users</title>
+    <link rel='stylesheet' href='css/generic.css'>
+    <link rel='stylesheet' href='css/top_users.css'>
 </head>
 <body>
+    <div id='notifiaction-container'>
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href='#'>Shopify</a></li>
+                <li><a href='top_users.html'>Top Users</a></li>
+                <li><a href='about_us.html'>About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
     <main class='top-users'>
         <h2>Our top users</h2>
         <section id='top-sellers' class='column'>
@@ -17,10 +29,13 @@
             <h2 class='column-header'>Top Buyers</h2>
         </section>
     </main>
+    
     <footer>
         <a href='home.html'>Shopify</a>
         <a href='http://codeweek.vratsa.net'>CodeWeek Vratsa</a>
     </footer>
+    
+    <script src='js/generic.js'></script>
     <script src='js/top_users.js'></script>
 </body>
 </html>

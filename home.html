@@ -1,14 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <link rel='stylesheet' href='css/generic.css'>
+    <meta charset='utf-8'/>
+    <title>Shopify</title>
+    <link rel='stylesheet' href='css/generic.css' />
+    <link rel='stylesheet' href='css/home.css' />
 </head>
 
 <body>
+    <div id='notifiaction-container'>
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href='#'>Shopify</a></li>
+                <li><a href='top_users.html'>Top Users</a></li>
+                <li><a href='about_us.html'>About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <form id='add-item'>
+            <div id='add-item-name'>
+                <label>Name</label>
+                <input type='text' />
+            </div>
+            <div id='add-item-quantity'>
+                <label>Quantity</label>
+                <input type='number' />
+            </div>
+            <div id='add-item-price'>
+                <label>Price</label>
+                <input type='number' />
+            </div>
+            <div id='add-item-condition'>
+                <label>Condition</label>
+                <select>
+                    <option value='none' selected>- Choose option -</option>
+                    <option value='decent'>Decent</option>
+                    <option value='good'>Good</option>
+                    <option value='excellent'>Excellent</option>
+                </select>
+            </div>
+            <div id='add-item-seller'>
+                <label>Seller</label>
+                <input type='text' />
+            </div>
+            <div id='add-item-info'>
+                <label>Info</label>
+                <textarea cols='30' rows='5'></textarea>
+            </div>
+            
+            <input id='add-item-button' value='Add Item' type='submit'/>
+        </form>
+    
+        <table id='items'>
+            <thead>
+                <tr class='table-head-row'>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Condition</th>
+                    <th>Seller</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        
+        <section id='item-details' class='hidden'>
+            <img src='images/brown-paper-package.png' />
+            <div id='item-details-name'>
+                <label>Item:</label>
+                <p></p>
+            </div>
+            <div id='item-details-quantity'>
+                <label>Quantity:</label>
+                <p></p>
+            </div>
+            <div id='item-details-price'>
+                <label>Price:</label>
+                <p></p>
+            </div>
+            <div id='item-details-condition'>
+                <label>Condition:</label>
+                <p></p>
+            </div>
+            <div id='item-details-info'>
+                <label>Additional Info:</label>
+                <p></p>
+            </div>
+            <div id='item-details-seller'>
+                <label>Seller:</label>
+                <p></p>
+            </div>
+        <section>
+    </main>
+
     <footer>
         <a href='home.html'>Shopify</a>
         <a href='http://codeweek.vratsa.net'>CodeWeek Vratsa</a>
     </footer>
+    
+    <script src='js/generic.js'></script>
+    <script src='js/home.js'></script>
 </body>
 </html>
