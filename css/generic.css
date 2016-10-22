@@ -1,4 +1,88 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Verdana';
+}
+
+body {
+    width: 70%;
+    margin: auto;
+    background-color: #F3F3F3;
+}
+
+@keyframes hover_link {
+    0% { background-color: #004787; }
+    100% { background-color: #003162; }
+}
+
+header {
+    background-color: #004787;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+header nav ul li {
+    display: inline-block;
+    float: left;
+}
+
+header nav ul li a {
+    display: inline-block;
+    padding: 15px 10px;
+    border-right: 1px solid #003162;
+    background-color: #004787;
+    font-size: 17px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    animation-name: hover_link;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: inline-block;
+}
+
+@keyframes pulse_once {
+    0% { opacity: 0; }
+    70% { opcaity: 1; }
+    100% { opacity: 1; }
+}
+
+.success {
+    opacity: 0;
+    color: #228B22;
+    border: 4px solid #006900;
+    animation-name: pulse_once;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+.error {
+    background-color: #F3F3F3;
+    position: absolute;
+    width: 20%;
+    text-align: center;
+    padding: 2%;
+    top: 2%;
+    left: 40%;
+    opacity: 0;
+    color: #93060F;
+    border: 4px solid #71040C;
+    animation-name: pulse_once;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    font-size: 1.5em;
 }

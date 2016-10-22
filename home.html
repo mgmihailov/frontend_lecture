@@ -3,16 +3,20 @@
 <head>
     <meta charset="utf-8"/>
     <title>
-        Home - Goodtrade
+        Shopify
     </title>
-    <link href="css/generic.css" rel="stylesheet"/>
+    <link href="css/generic.css" rel="stylesheet" />
+    <link href="css/home.css" rel="stylesheet" />
 </head>
 
 <body>
+    <div id="notifiaction-container">
+    </div>
+
     <header>
         <nav>
             <ul>
-                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Shopify</a></li>
                 <li><a href="top_users.html">Top Users</a></li>
                 <li><a href="about_us.html">About Us</a></li>
             </ul>
@@ -22,7 +26,7 @@
     <main>
         <form id="add-item">
             <div id="add-item-name">
-                <label>Name:</label>
+                <label>Name</label>
                 <input type="text" />
             </div>
             <div id="add-item-quantity">
@@ -42,14 +46,13 @@
                     <option value="excellent">Excellent</option>
                 </select>
             </div>
-            <div id="add-item-info">
-                <label>Additional Info</label>
-                <textarea>
-                </textarea>
-            </div>
             <div id="add-item-seller">
                 <label>Seller</label>
                 <input type="text" />
+            </div>
+            <div id="add-item-info">
+                <label>Info</label>
+                <textarea cols="30" rows="5"></textarea>
             </div>
             
             <input id="add-item-button" value="Add Item" type="submit"/>
@@ -57,18 +60,45 @@
     
         <table id="items">
             <thead>
-                <tr>
+                <tr class="table-head-row">
                     <th>Name</th>
                     <th>Quantity</th>
                     <th>Price</th>
                     <th>Condition</th>
-                    <th>Additional Info</th>
                     <th>Seller</th>
                 </tr>
             </thead>
             <tbody>
             </tbody>
         </table>
+        
+        <section id="item-details" class="hidden">
+            <img src="images/brown-paper-package.png" />
+            <div id="item-details-name">
+                <label>Item:</label>
+                <p></p>
+            </div>
+            <div id="item-details-quantity">
+                <label>Quantity:</label>
+                <p></p>
+            </div>
+            <div id="item-details-price">
+                <label>Price:</label>
+                <p></p>
+            </div>
+            <div id="item-details-condition">
+                <label>Condition:</label>
+                <p></p>
+            </div>
+            <div id="item-details-info">
+                <label>Additional Info:</label>
+                <p></p>
+            </div>
+            <div id="item-details-seller">
+                <label>Seller:</label>
+                <p></p>
+            </div>
+        <section>
     </main>
 
     <footer>

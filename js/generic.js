@@ -1,13 +1,19 @@
 function error(msg) {
-    var el = document.createElement("span");
+    var el = document.getElementById("notifiaction-container");
     el.innerHTML = msg;
     el.className = "error";
-    document.body.appendChild(el);
+    setTimeout(function(elArg){
+        elArg.className = "";
+        elArg.innerHTML = "";
+    }, 6000, el);
 }
 
 function success(msg) {
-    var el = document.createElement("span");
+    var el = document.getElementById("notifiaction-container");
     el.innerHTML = msg;
     el.className = "success";
-    document.body.appendChild(el);
+    setTimeout(function(elArg){
+        elArg.className = "";
+        elArg.innerHTML = "";
+    }, 6000, el);
 }
